@@ -1,0 +1,101 @@
+body {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+#message-container {
+    width: 100%;
+    max-width: 1200px;
+    height: 80vh;
+    overflow-y: auto;
+    border-radius: 10px;
+    background: #9393bb;
+    /*position: relative;*/
+
+}
+
+#message-container div {
+    padding: 14px;
+    display: flex;
+    justify-content: space-between;
+    max-width: 400px;
+}
+
+#message-container div{
+    overflow-wrap: break-word;
+}
+
+#message-container div:nth-child(2n) {
+    background: #9b9bc6;
+}
+
+#chat-game-container{
+    width: 400px;
+    height: 80vh;
+    display: flex;
+    /*background-color: #b7cbff;*/
+    /*overflow-y: scroll;*/
+    margin-right:20px;
+    border-radius: 10px;
+    flex-direction: column;
+}
+
+#game-container{
+    background-color: #b0caff;
+    width: 700px;
+    height: 80vh;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+#container{
+    display: flex;
+    justify-content: space-between;
+    margin-top:100px;
+}
+
+#send-container{
+    height: 50px;
+    padding: 20px 10px;
+    background: #9393bb;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+
+#resumeGame button{
+    width: 100px;
+    height: 30px;
+}
+
+#symbol {
+    font-size: 2em;
+}
+.board {
+    margin: auto;
+    width: 350px;
+}
+.board button {
+    height: 100px;
+    width: 100px;
+    margin: 0px;
+    padding: 0px;
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    font-size: 3em;
+}
+
+#messages {
+    font-size: 1.9em;
+}
+
+input[type="text" i]{
+    padding: 9px;
+    /* margin-right: 50%; */
+    margin-left: 2%;
+    width: 90%;
+    border-radius: 10px;
+}

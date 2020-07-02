@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!--    <meta charset="UTF-8">-->
+<!--    <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+<!--    <meta http-equiv="X-UA-Compatible" content="ie=edge">-->
+<!--    <title>Chat App</title>-->
+<!--    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">-->
+<!--    <script defer src="http://localhost:3000/socket.io/socket.io.js"></script>-->
+<!--    <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>-->
+<!--    <script defer src="script.js"></script>-->
+    <link href="style/style.css" rel="stylesheet" />
+
+</head>
+
+<body>
+    <div id="container">
+        <div id="chat-game-container">
+            <div id="message-container">
+            </div>
+            <div id="send-container">
+                <form>
+                    <input class="form-control" type="text" id="message-input">
+                </form>
+            </div>
+        </div>
+        <div id="game-container">
+            Your Symbol: <div id="symbol">waiting...</div>
+            <div class="board">
+                <button class="cell" id="a0"></button>
+                <button class="cell" id="a1"></button>
+                <button class="cell" id="a2"></button>
+                <button class="cell" id="b0"></button>
+                <button class="cell" id="b1"></button>
+                <button class="cell" id="b2"></button>
+                <button class="cell" id="c0"></button>
+                <button class="cell" id="c1"></button>
+                <button class="cell" id="c2"></button>
+
+                <div id="messages">Waiting for opponent to join...</div>
+            </div>
+            <div id="resumeGame"></div>
+        </div>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="app/tictactoe.js"></script>
+</body>
+</html>
